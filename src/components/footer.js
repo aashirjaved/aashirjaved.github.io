@@ -92,11 +92,11 @@ const Footer = () => {
       </StyledSocial>
       <StyledMetadata tabindex="-1">
         <StyledGitHubLink
-          href="https://github.com/aashirjaved"
+          href="https://brittanychiang.com/"
           target="_blank"
           rel="nofollow noopener noreferrer">
           <div>
-            Designed &amp; Built by Aashir Javed<br></br>
+           Forked from <br></br>
           </div>
 
           {githubInfo.stars && githubInfo.forks && (
