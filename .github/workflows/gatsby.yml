@@ -83,7 +83,7 @@ jobs:
         run: |
           git config --global user.email $MY_EMAIL
           git config --global user.name $MY_USERNAME
-          git remote set-url origin https://$MY_NAME:${{ secrets.GH_SECRET }}@github.com/aashirjaved/aashirjaved.github.io.git
+          git remote set-url origin https://$MY_USERNAME:${{ secrets.GH_SECRET }}@github.com/aashirjaved/aashirjaved.github.io.git
           ${{ steps.detect-package-manager.outputs.manager }} run deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
