@@ -81,8 +81,8 @@ jobs:
           MY_EMAIL: aas.jav@gmail.com
           MY_USERNAME: aashirjaved
         run: |
-          git config --global user.email $MY_EMAIL
-          git config --global user.name $MY_USERNAME
+          git config --global user.email aas.jav@gmail.com
+          git config --global user.name aashirjaved
           git remote set-url origin https://$MY_USERNAME:${{ secrets.GH_SECRET }}@github.com/aashirjaved/aashirjaved.github.io.git
           ${{ steps.detect-package-manager.outputs.manager }} run deploy
       - name: Upload artifact
